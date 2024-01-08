@@ -8,7 +8,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Videos from "./pages/Videos";
 import VideoDetail from "./pages/VideoDetail";
 
-
 const router = createBrowserRouter([
   {
     path: "/",

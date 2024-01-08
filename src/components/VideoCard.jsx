@@ -1,6 +1,6 @@
 import React from "react";
 import moment from "moment";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function VideoCard({ video }) {
   const formattedDate = moment(video.snippet.publishedAt).fromNow();

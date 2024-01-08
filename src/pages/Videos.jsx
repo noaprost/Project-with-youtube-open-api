@@ -17,7 +17,7 @@ export default function Videos() {
   });
 
   return (
-    <>
+    <div className="bg-gray-950">
       {isLoading && <p className="text-center">Loading ... </p>}
       {error && <p className="text-red-800">{JSON.stringify(error)}</p>}
       {videos && (
@@ -27,6 +27,6 @@ export default function Videos() {
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 }
