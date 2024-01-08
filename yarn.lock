@@ -2370,6 +2370,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@remix-run/router@npm:1.14.1":
+  version: 1.14.1
+  resolution: "@remix-run/router@npm:1.14.1"
+  checksum: aa179e96fa7da5bdb86e6887219613cbe47b67d6595564b4f8fe7e80f8980f9c76e120524f0864aa8af46ac0f1a06bcdb4d20058d770c9199e5af599f772c0a9
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-babel@npm:^5.2.0":
   version: 5.3.1
   resolution: "@rollup/plugin-babel@npm:5.3.1"
@@ -2607,6 +2614,43 @@ __metadata:
     "@svgr/plugin-svgo": "npm:^5.5.0"
     loader-utils: "npm:^2.0.0"
   checksum: 0313712a1892f387d8c425652239dd635269241b18e7e6f9aad6a339cbe887ebec813d146df23407229384ac5e9d6527f3571aa2fc9dcb30e32006c9eb918663
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-core@npm:5.17.0":
+  version: 5.17.0
+  resolution: "@tanstack/query-core@npm:5.17.0"
+  checksum: 3090ada4ba1bed162186ca33c25c5caa4e3e4449555dd1cec331a43b5e89d9b5a3320d5983ca106b33bbf7388783bd0dfc071957579a4db037ca4b66ad031e85
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-devtools@npm:5.15.0":
+  version: 5.15.0
+  resolution: "@tanstack/query-devtools@npm:5.15.0"
+  checksum: f4582a032ab0f72f9561b6bd1fd99e40e3cfb6b0cda56921628e31625f11d3d114ea5135ab2886e443b3c88b2923c8594bf80cc60158d9d5e655857795e93ab0
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query-devtools@npm:^5.17.0":
+  version: 5.17.0
+  resolution: "@tanstack/react-query-devtools@npm:5.17.0"
+  dependencies:
+    "@tanstack/query-devtools": "npm:5.15.0"
+  peerDependencies:
+    "@tanstack/react-query": ^5.17.0
+    react: ^18.0.0
+  checksum: 8ce06938eb706385dd8d8e1f959fd057fd5a053ec88092567626c9c29b06254a5dedf009aa3701bf6eeb8ab53c8bdf7c04f338d0f78a842ee3846f9930f4528e
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^5.17.0":
+  version: 5.17.0
+  resolution: "@tanstack/react-query@npm:5.17.0"
+  dependencies:
+    "@tanstack/query-core": "npm:5.17.0"
+  peerDependencies:
+    react: ^18.0.0
+  checksum: 7f40ed9b874a5709c54e5c6393126f8b44a4b1e80ddd68ee96f514019f5b9244a86fff06ccb8072bb113fac79dcd0a69fd1ea56871b9366df1f79db27bf817af
   languageName: node
   linkType: hard
 
@@ -3928,6 +3972,17 @@ __metadata:
   version: 4.7.0
   resolution: "axe-core@npm:4.7.0"
   checksum: 89ac5712b5932ac7d23398b4cb5ba081c394a086e343acc68ba49c83472706e18e0799804e8388c779dcdacc465377deb29f2714241d3fbb389cf3a6b275c9ba
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.6.5":
+  version: 1.6.5
+  resolution: "axios@npm:1.6.5"
+  dependencies:
+    follow-redirects: "npm:^1.15.4"
+    form-data: "npm:^4.0.0"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: aeb9acf87590d8aa67946072ced38e01ca71f5dfe043782c0ccea667e5dd5c45830c08afac9be3d7c894f09684b8ab2a458f497d197b73621233bcf202d9d468
   languageName: node
   linkType: hard
 
@@ -6460,7 +6515,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0":
+"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.15.4":
   version: 1.15.4
   resolution: "follow-redirects@npm:1.15.4"
   peerDependenciesMeta:
@@ -6528,6 +6583,17 @@ __metadata:
     combined-stream: "npm:^1.0.8"
     mime-types: "npm:^2.1.12"
   checksum: 1ccc3ae064a080a799923f754d49fcebdd90515a8924f0f54de557540b50e7f1fe48ba5f2bd0435a5664aa2d49729107e6aaf2155a9abf52339474c5638b4485
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "form-data@npm:4.0.0"
+  dependencies:
+    asynckit: "npm:^0.4.0"
+    combined-stream: "npm:^1.0.8"
+    mime-types: "npm:^2.1.12"
+  checksum: cb6f3ac49180be03ff07ba3ff125f9eba2ff0b277fb33c7fc47569fc5e616882c5b1c69b9904c4c4187e97dd0419dd03b134174756f296dec62041e6527e2c6e
   languageName: node
   linkType: hard
 
@@ -9182,6 +9248,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"moment@npm:^2.30.1":
+  version: 2.30.1
+  resolution: "moment@npm:2.30.1"
+  checksum: 865e4279418c6de666fca7786607705fd0189d8a7b7624e2e56be99290ac846f90878a6f602e34b4e0455c549b85385b1baf9966845962b313699e7cb847543a
+  languageName: node
+  linkType: hard
+
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -10793,6 +10866,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: fe7dd8b1bdbbbea18d1459107729c3e4a2243ca870d26d34c2c1bcd3e4425b7bcc5112362df2d93cc7fb9746f6142b5e272fd1cc5c86ddf8580175186f6ad42b
+  languageName: node
+  linkType: hard
+
 "psl@npm:^1.1.33":
   version: 1.9.0
   resolution: "psl@npm:1.9.0"
@@ -10939,6 +11019,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-icons@npm:^4.12.0":
+  version: 4.12.0
+  resolution: "react-icons@npm:4.12.0"
+  peerDependencies:
+    react: "*"
+  checksum: 2170f43031ee7365539f72d4075cbe6c7fbf9a66d6cf4494aa9393b194272da0564f5b19d1b24dbfc567c0ac89f5fe5b8974d92dd83f61e252388dde6a226fb8
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -10964,6 +11053,30 @@ __metadata:
   version: 0.11.0
   resolution: "react-refresh@npm:0.11.0"
   checksum: cbb5616c7ba670bbd2f37ddadcdfefa66e727ea188e89733ccb8184d3b874631104b0bc016d5676a7ade4d9c79100b99b46b6ed10cd117ab5d1ddcbf8653a9f2
+  languageName: node
+  linkType: hard
+
+"react-router-dom@npm:^6.21.1":
+  version: 6.21.1
+  resolution: "react-router-dom@npm:6.21.1"
+  dependencies:
+    "@remix-run/router": "npm:1.14.1"
+    react-router: "npm:6.21.1"
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 2c2b653de8cc90397e5b057c0d32dd780fe894c4bd36397005da169a7422b31988ebc14ef0da3ac3f2b7286b244f97a141974acaa86c731715816e64c8cd2912
+  languageName: node
+  linkType: hard
+
+"react-router@npm:6.21.1":
+  version: 6.21.1
+  resolution: "react-router@npm:6.21.1"
+  dependencies:
+    "@remix-run/router": "npm:1.14.1"
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 81278cf25a999d7c93a31d540102e3b74b696eb4349779e22bba77b633e4e5f8f91b8c6f7946c9572a1e92f64363724150216f5643a6f9817f8bc1643cb8bdbc
   languageName: node
   linkType: hard
 
@@ -12301,7 +12414,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.0.2":
+"tailwindcss@npm:^3.0.2, tailwindcss@npm:^3.4.0":
   version: 3.4.0
   resolution: "tailwindcss@npm:3.4.0"
   dependencies:
@@ -13643,12 +13756,19 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "youtube@workspace:."
   dependencies:
+    "@tanstack/react-query": "npm:^5.17.0"
+    "@tanstack/react-query-devtools": "npm:^5.17.0"
     "@testing-library/jest-dom": "npm:^5.14.1"
     "@testing-library/react": "npm:^13.0.0"
     "@testing-library/user-event": "npm:^13.2.1"
+    axios: "npm:^1.6.5"
+    moment: "npm:^2.30.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-icons: "npm:^4.12.0"
+    react-router-dom: "npm:^6.21.1"
     react-scripts: "npm:5.0.1"
+    tailwindcss: "npm:^3.4.0"
     web-vitals: "npm:^2.1.0"
   languageName: unknown
   linkType: soft
