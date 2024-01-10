@@ -18,12 +18,12 @@ export default function Videos() {
 
   return (
     <div className="bg-gray-950">
-      {isLoading && <p className="text-center">Loading ... </p>}
+      {isLoading && <p className="text-center text-white">Loading ... </p>}
       {error && <p className="text-red-800">{JSON.stringify(error)}</p>}
       {videos && (
         <ul className="flex flex-wrap justify-evenly">
           {videos.map((video) => (
-            <VideoCard key={video.id} video={video} />
+            <VideoCard key={video.id} video={video} keyword={keyword}/>
           ))}
         </ul>
       )}
