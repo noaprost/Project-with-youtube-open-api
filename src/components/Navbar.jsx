@@ -9,7 +9,6 @@ export default function Navbar() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setKeyword("");
     navigate(`/videos/${keyword}`);
   };
 

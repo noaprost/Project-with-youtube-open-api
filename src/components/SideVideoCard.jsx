@@ -11,7 +11,7 @@ export default function SideVideoCard({ video, keyword }) {
     });
   };
   return (
-    <div className="flex items-center" onClick={handleClick}>
+    <div className="flex items-center w-full" onClick={handleClick}>
       <img
         className="w-40 h-25 rounded-3xl mr-5"
         src={video.snippet.thumbnails.high.url}

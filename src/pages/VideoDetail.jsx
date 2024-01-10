@@ -30,7 +30,7 @@ export default function VideoDetail() {
       <div className="bg-gray-950 flex flex-row flex-wrap mt-6 mx-10">
         <div key={video.id} className="w-128 mx-20">
           <VideoPlayer videoId={videoId} />
-          <p className="text-white break-word text-xl font-semibold">
+          <p className="text-white break-word text-sm font-semibold">
             {video.snippet.title}
           </p>
           <ChannelInfo
@@ -42,7 +42,6 @@ export default function VideoDetail() {
           </span>
         </div>
         <section className="w-96">
-          {/* channel id의 다른 영상들을 보여주는 부분 */}
           {videos &&
             videos.map((targetVideo) => {
               if (video.snippet.channelId === targetVideo.snippet.channelId) {

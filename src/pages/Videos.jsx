@@ -22,9 +22,12 @@ export default function Videos() {
       {error && <p className="text-red-800">{JSON.stringify(error)}</p>}
       {videos && (
         <ul className="flex flex-wrap justify-evenly">
-          {videos.map((video) => (
-            <VideoCard key={video.id} video={video} keyword={keyword}/>
-          ))}
+          {videos.map(
+            (video) =>
+              keyword && (
+                <VideoCard key={video.id} video={video} keyword={keyword} />
+              )
+          )}
         </ul>
       )}
     </div>
