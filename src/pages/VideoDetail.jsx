@@ -30,16 +30,18 @@ export default function VideoDetail() {
       <div className="bg-gray-950 flex flex-row flex-wrap mt-6 mx-10">
         <div key={video.id} className="w-128 mx-20">
           <VideoPlayer videoId={videoId} />
-          <p className="text-white break-word text-sm font-semibold">
-            {video.snippet.title}
-          </p>
-          <ChannelInfo
-            id={video.snippet.channelId}
-            name={video.snippet.channelTitle}
-          />
-          <span className="text-white break-all text-sm">
-            {video.snippet.description}
-          </span>
+          <div className="bg-gray-800 rounded-md p-3">
+            <p className="text-white break-word text-sm font-semibold">
+              {video.snippet.title}
+            </p>
+            <ChannelInfo
+              id={video.snippet.channelId}
+              name={video.snippet.channelTitle}
+            />
+            <span className="text-white break-all text-sm">
+              {video.snippet.description}
+            </span>
+          </div>
         </div>
         <section className="w-96">
           {videos &&
