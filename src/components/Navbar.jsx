@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex flex-row bg-black justify-center items-center p-4">
+    <div className="flex flex-row bg-black justify-between items-center p-4">
       <Link
         to="/"
         className="flex flex-row justify-center items-center mx-4 text-white text-lg font-medium"
@@ -25,21 +25,23 @@ export default function Navbar() {
         <SiYoutubeshorts className="mr-2 text-red-600 w-5 h-5" />
         Youtube
       </Link>
-      <form
-        className="mx-auto flex flex-row justify-center"
-        onSubmit={handleSubmit}
-      >
-        <input
-          className="p-4 w-96 h-7 bg-gray-800 text-white outline-none rounded-l-xl"
-          type="text"
-          placeholder="Search"
-          value={keyword}
-          onChange={handleChange}
-        />
-        <button className="border-none bg-gray-700 w-14 h-8 rounded-r-xl">
-          <IoSearchOutline className="text-white w-5 h-5 mx-auto" />
-        </button>
-      </form>
+      <div className="mx-auto">
+        <form
+          className="flex flex-row justify-center mr-40"
+          onSubmit={handleSubmit}
+        >
+          <input
+            className="p-4 h-7 w-64 bg-gray-800 text-white outline-none rounded-l-xl"
+            type="text"
+            placeholder="Search"
+            value={keyword}
+            onChange={handleChange}
+          />
+          <button className="border-none bg-gray-700 w-14 h-8 rounded-r-xl">
+            <IoSearchOutline className="text-white w-5 h-5 mx-auto" />
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

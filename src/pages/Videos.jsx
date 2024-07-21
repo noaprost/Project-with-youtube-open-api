@@ -17,15 +17,15 @@ export default function Videos() {
   });
 
   return (
-    <div className="bg-gray-950">
+    <div className="bg-gray-950 w-11/12 mx-auto pl-20">
       {isLoading && <p className="text-center text-white">Loading ... </p>}
       {error && <p className="text-red-800">{JSON.stringify(error)}</p>}
       {videos && (
-        <ul className="flex flex-wrap justify-evenly">
+        <div className="flex flex-wrap p-0">
           {videos.map((video) => (
             <VideoCard key={video.id} video={video} keyword={keyword} />
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
